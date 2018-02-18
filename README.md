@@ -11,7 +11,7 @@ Sea Eagle is a web application which enables users to upload chest x-rays and re
 - Edema
 - Emphysema
 - Cardiomegaly
-- Pleural_Thickening
+- Pleural Thickening
 - Consolidation
 - Pneumothorax
 - Mass
@@ -37,7 +37,7 @@ Sea Eagle uses a prediction model pretrained with Python using *Keras* and *Tens
 git clone https://github.com/henrywarhurst/sea-eagle-fe
 
 // Install dependencies
-yarn install
+yarn
 
 // Run development server with react hot-reload
 yarn run dev
