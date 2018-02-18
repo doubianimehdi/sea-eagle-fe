@@ -38,6 +38,7 @@ module.exports = (env = {}) => {
       app: [
         'react-hot-loader/patch',
         './src/index.tsx',
+        './src/index.scss',
       ],
     },
     output: {
@@ -96,15 +97,22 @@ module.exports = (env = {}) => {
           include: [PATHS.src],
           use: { loader: 'json-loader' },
         },
-        // // css
-        // {
-        //   test: /\.css$/,
-        //   include: [PATHS.STYLES],
-        //   loader: ExtractTextPlugin.extract([
-        //     'css-loader?{modules: false}',
-        //     'postcss-loader',
-        //   ]),
-        // },
+        // css
+        {
+          test: /\.scss$/,
+          include: [PATHS.src],
+          use: [{
+            loader: "style-loader" // creates style nodes from JS strings
+          }, {
+            loader: "css-loader" // translates CSS into CommonJS
+          }, {
+            loader: "sass-loader" // compiles Sass to CSS
+          }]
+        },
+        {
+          test: /\.(eot|woff|ttf)$/,
+          loader: "file-loader"
+        }
         // // less
         // {
         //   test: /\.less$/,

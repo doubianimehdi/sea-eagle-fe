@@ -4,7 +4,7 @@
     "paths": {
       "redux": ["src/typings/redux.d.ts"],
       "Components/*": ["src/components/*"],
-      "Features/*": ["src/features/*"],
+      "Features/*": ["src/features/*"]
     },
     "outDir": "out/", // target for compiled files
     "allowSyntheticDefaultImports": true, // no errors on commonjs default import

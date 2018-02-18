@@ -7,6 +7,7 @@ import { History } from 'history';
 
 import { ListView } from 'Components/list-view';
 import { Counter } from 'Components/counter';
+import { SeaEagleNav } from 'Components/seaEagleNav';
 
 interface Props {
   store: Store<any>;
@@ -23,9 +24,9 @@ export class App extends React.Component<Props, {}> {
             exact={true}
             path="/"
             render={() => (
-              <ListView title="List of counters" >
-                <Counter />
-              </ListView>
+              <div className="se-container">
+                <SeaEagleNav />
+              </div>
             )}
           />
         </ConnectedRouter>
