@@ -7,16 +7,11 @@ export class SeaEagleNav extends React.Component {
       <Navbar>
         <NavbarGroup>
           <div className="se-nav-logo" />
-          <NavbarDivider />
-          <NavbarHeading>Sea Eagle X-ray Engine</NavbarHeading>
+          <NavbarDivider className="se-heading-divider" />
+          <NavbarHeading className="se-app-title">Sea Eagle X-ray Engine</NavbarHeading>
         </NavbarGroup>
         <NavbarGroup align="right">
-          <Button className="pt-minimal" iconName="home">Home</Button>
-          <Button className="pt-minimal" iconName="document">Files</Button>
-          <NavbarDivider />
-          <Button className="pt-minimal" iconName="user" />
-          <Button className="pt-minimal" iconName="notifications" />
-          <Button className="pt-minimal" iconName="cog" />
+          <Button className="pt-minimal" iconName="help">Help</Button>
         </NavbarGroup>
       </Navbar>
     );

@@ -1,4 +1,15 @@
+@import "../fonts";
+
 $se-logo-size: 50px;
+
+.se-heading-divider {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.se-app-title {
+    font-family: 'Muli', sans-serif;
+}
 
 .se-nav-logo {
     background-image: url('./resources/eagle.svg');

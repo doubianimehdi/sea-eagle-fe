@@ -1,0 +1,43 @@
+$se-file-area-height: 600px;
+$se-file-area-width: 600px;
+$se-results-area-height: $se-file-area-height;
+$se-results-area-width: 400px;
+
+.se-body-container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+    .se-classifier-area {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        .se-file-drag-area {
+            height: $se-file-area-height;
+            width: $se-file-area-width;
+        }
+
+        .se-results-area {
+            height: $se-results-area-height;
+            width: $se-results-area-width;
+        }
+
+    }
+
+    .se-drop-file-instructions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        opacity: 0.4;
+
+        .se-plus-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+    }
+    
+}

@@ -7,6 +7,7 @@ import { History } from 'history';
 
 import { ListView } from 'Components/list-view';
 import { SeaEagleNav } from 'Components/seaEagleNav';
+import { SeaEagleClassifierArea } from 'Components/seaEagleClassifierArea';
 
 interface Props {
   store: Store<any>;
@@ -25,6 +26,7 @@ export class App extends React.Component<Props, {}> {
             render={() => (
               <div className="se-container">
                 <SeaEagleNav />
+                <SeaEagleClassifierArea />
               </div>
             )}
           />
