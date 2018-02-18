@@ -1,0 +1,10 @@
+$se-logo-size: 50px;
+
+.se-nav-logo {
+    background-image: url('./resources/eagle.svg');
+    width: $se-logo-size;
+    height: $se-logo-size;
+    background-size: $se-logo-size $se-logo-size;
+    background-repeat: no-repeat;
+    display: block;
+}

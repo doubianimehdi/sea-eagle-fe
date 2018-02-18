@@ -6,7 +6,6 @@ import { Route } from 'react-router-dom';
 import { History } from 'history';
 
 import { ListView } from 'Components/list-view';
-import { Counter } from 'Components/counter';
 import { SeaEagleNav } from 'Components/seaEagleNav';
 
 interface Props {

@@ -22,8 +22,6 @@
     "test:update": "jest --config jest.json -u",
     "reinstall": "rm -rf node_modules && yarn",
     "reinstall:win": "rd /s /q node_modules && yarn",
-    "precommit": "yarn run lint",
-    "prepush": "yarn run lint & yarn run tsc & yarn run test",
     "deploy": "echo 'deploy not set!'",
     "graph": "tsc && madge --image graph.svg out/index.js --warning"
   },
@@ -45,6 +43,7 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.2",
     "tslib": "1.8.1",
+    "tslint-loader": "^3.5.3",
     "typesafe-actions": "1.1.2",
     "utility-types": "1.0.0-rc.2"
   },

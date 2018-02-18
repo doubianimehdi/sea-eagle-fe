@@ -88,6 +88,9 @@ module.exports = (env = {}) => {
                   },
                 },
               },
+              {
+                loader: 'tslint-loader',
+              },
             ]
           ),
         },
@@ -110,7 +113,7 @@ module.exports = (env = {}) => {
           }]
         },
         {
-          test: /\.(eot|woff|ttf)$/,
+          test: /\.(eot|woff|ttf|svg)$/,
           loader: "file-loader"
         }
         // // less
