@@ -3,6 +3,18 @@
 @import "./components/seaEagleNav.scss";
 @import "./components/seaEagleClassifierArea.scss";
 
-body, html, .se-container {
+.se-container {
     height: 100vh;
+}
+
+body {
+    height: 100vh;
+}
+
+html  {
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(#552520, 0.2) 0%,
+        rgba(#552520, 0.1) 100%
+        );
 }

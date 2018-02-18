@@ -2,20 +2,27 @@
 
 $se-logo-size: 50px;
 
-.se-heading-divider {
-    margin-left: 15px;
-    margin-right: 15px;
-}
+.se-navbar {
+    opacity: 0.8;
 
-.se-app-title {
-    font-family: 'Muli', sans-serif;
-}
+    .se-heading-divider {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
-.se-nav-logo {
-    background-image: url('./resources/eagle.svg');
-    width: $se-logo-size;
-    height: $se-logo-size;
-    background-size: $se-logo-size $se-logo-size;
-    background-repeat: no-repeat;
-    display: block;
+    .se-app-title {
+        color: #442220;
+        font-family: 'Muli', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .se-nav-logo {
+        background-image: url('./resources/eagle.svg');
+        width: $se-logo-size;
+        height: $se-logo-size;
+        background-size: $se-logo-size $se-logo-size;
+        background-repeat: no-repeat;
+        display: block;
+    }
 }

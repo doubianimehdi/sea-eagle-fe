@@ -4,11 +4,11 @@ import { Button, Navbar, NavbarDivider, NavbarGroup, NavbarHeading } from '@blue
 export class SeaEagleNav extends React.Component {
   render() {
     return (
-      <Navbar>
+      <Navbar className="se-navbar">
         <NavbarGroup>
           <div className="se-nav-logo" />
           <NavbarDivider className="se-heading-divider" />
-          <NavbarHeading className="se-app-title">Sea Eagle X-ray Engine</NavbarHeading>
+          <NavbarHeading className="se-app-title">Sea Eagle X-ray Analysis</NavbarHeading>
         </NavbarGroup>
         <NavbarGroup align="right">
           <Button className="pt-minimal" iconName="help">Help</Button>

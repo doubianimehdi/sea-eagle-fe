@@ -1,3 +1,5 @@
+@import "../fonts";
+
 $se-file-area-height: 600px;
 $se-file-area-width: 600px;
 $se-results-area-height: $se-file-area-height;
@@ -8,6 +10,7 @@ $se-results-area-width: 400px;
     display: flex;
     height: 100vh;
     justify-content: center;
+    opacity: 0.8;
 
     .se-classifier-area {
         align-items: center;
@@ -22,6 +25,14 @@ $se-results-area-width: 400px;
         .se-results-area {
             height: $se-results-area-height;
             width: $se-results-area-width;
+        }
+
+        .se-results-button {
+            font-family: 'Muli', sans-serif;
+            min-height: 40px;
+            flex-basis: 150px;
+            margin-left: 40px;
+            margin-right: 40px;
         }
 
     }
